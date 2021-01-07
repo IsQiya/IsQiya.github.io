@@ -3,8 +3,8 @@
 
 
 <head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="分类, IsQiya&#39;s repository">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <meta name="keywords" content="分类, IsQiya">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>分类 | IsQiya&#39;s repository</title>
+    <title>分类 | IsQiya</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -27,15 +27,19 @@
     <link rel="stylesheet" type="text/css" href="/css/matery.css">
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
+    <!-- 今日诗词特效 -->
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.3.0"></head>
+<meta name="generator" content="Hexo 5.3.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 
 
 <body>
-    <header class="navbar-fixed">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
@@ -43,7 +47,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">IsQiya&#39;s repository</span>
+                    <span class="logo-span">IsQiya</span>
                 </a>
             </div>
             
@@ -131,7 +135,7 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">IsQiya&#39;s repository</div>
+        <div class="logo-name">IsQiya</div>
         <div class="logo-desc">
             
             Never really desperate, only the lost of the soul.
@@ -234,24 +238,9 @@
 
             <div class="description center-align">
                 
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: [ 
-                            
-                                "从来没有真正的绝境, 只有心灵的迷途",
-                            
-                                "Never really desperate, only the lost of the soul",
-                            
-                        ],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
+                    <!--  -->
+                            <!-- 改为下面这串增加今日诗词 -->
+                    <span id="jinrishici-sentence">正在加载今日诗词....</span>
                 
             </div>
         </div>
@@ -287,6 +276,15 @@
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             style="background-color: #F9EBEA;">说明
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" title="博客搭建: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #F5EEF8;">博客搭建
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -334,7 +332,7 @@
                     color: '#3C4858'
                 }
             },
-            indicator: [{"name":"说明","max":2}],
+            indicator: [{"name":"说明","max":2},{"name":"博客搭建","max":2}],
             nameGap: 5,
             center: ['50%','55%'],
             radius: '66%'
@@ -345,7 +343,7 @@
             itemStyle: {normal: {areaStyle: {type: 'default'}}},
             data : [
                 {
-                    value : [1],
+                    value : [1,1],
                     name : '文章分类数量'
                 }
             ]
@@ -374,7 +372,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">75</span>&nbsp;字
+                class="white-color">88</span>&nbsp;字
             
             
             
@@ -700,6 +698,8 @@ WIDGET = {
     </script> -->
       
 
+    <!-- 鼠标点击特效  富强民主文明 -->
+    <!-- <script src="/js/click_show_text.js"></script> --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 </body>
 

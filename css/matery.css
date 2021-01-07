@@ -34,11 +34,25 @@
 }
 
 body {
-    background-color: #eaeaea;
+    /* 默认 */
+    /* background-color: #eaeaea;
     margin: 0;
     color: #34495e;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: auto; */
+
+    /* 渐变色 */ 
+    background: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35) ) 0% 0% / cover, url("https://x.png"), url("https://x.jpg") 0px 0px; 
+    background-attachment: fixed; 
+    margin: 0; 
+    color: #7F95D1; 
+
+    /* cursor:url(/cursor.svg); 
+    background: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35) ); 
+    margin: 0; 
+    color: #34495e; */
+
+
 }
 
 h1 {
@@ -241,12 +255,15 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    /* background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%); */
+    background-image: linear-gradient(to right, #4c42da 0%, #3d35ad 100%);/*蓝色*/
     opacity: 0.8  /* 透明效果 */
 }
 
 .text-color {
-    color: #0f9d58 !important;
+    /* color: #0f9d58 !important; */
+    color: #3d35ad !important;
+    
 }
 
 .white-color {
@@ -258,7 +275,8 @@ mark {
     position: fixed;
     bottom: 0;
     z-index: 300;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    /* background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%); */
+    background: linear-gradient(to right,#443cbe 0%,#3d35ad 100%);
     opacity: 0.8;
 }
 
@@ -879,7 +897,8 @@ article a {
 
 article a:hover {
     font-weight: bold;
-    color: #42b983;
+    /* color: #42b983; */
+    color: #2b4ba1;
     text-decoration: underline;
 }
 
@@ -1176,9 +1195,11 @@ article .article-tags .chip {
     text-indent: 0.2rem;
 }
 
+/* 文章中连接字体颜色 */
 #articleContent a {
     padding: 0 2px;
     color: #42b983;
+    /* color: #0e0707; */
     font-weight: 500;
     text-decoration: underline;
     word-wrap: break-word;
