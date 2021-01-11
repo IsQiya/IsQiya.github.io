@@ -4,7 +4,7 @@
 
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="【博客搭建遇见的问题】ERROR Deployer not found: git, IsQiya">
+    <meta name="keywords" content="对象数组的创建方式, IsQiya">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>【博客搭建遇见的问题】ERROR Deployer not found: git | IsQiya</title>
+    <title>对象数组的创建方式 | IsQiya</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -229,12 +229,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">【博客搭建遇见的问题】ERROR Deployer not found: git</h1>
+                    <h1 class="description center-align post-title">对象数组的创建方式</h1>
                 </div>
             </div>
         </div>
@@ -350,8 +350,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%B8%B8%E8%A7%81%E6%8A%A5%E9%94%99/">
-                                <span class="chip bg-color">常见报错</span>
+                            <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                                <span class="chip bg-color">学习笔记</span>
                             </a>
                         
                     </div>
@@ -362,8 +362,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-category">
-                                博客搭建
+                            <a href="/categories/%E8%BD%AF%E8%80%83%E4%B9%8B%E7%A8%8B%E5%BA%8F%E5%91%98/" class="post-category">
+                                软考之程序员
                             </a>
                         
                     </div>
@@ -375,7 +375,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-01-06
+                    2021-01-11
                 </div>
                 
 
@@ -389,7 +389,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    12
+                    48
                 </div>
                 
 
@@ -416,11 +416,12 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="部署问题"><a href="#部署问题" class="headerlink" title="部署问题"></a>部署问题</h2><p><img src="https://img-blog.csdnimg.cn/20210106200216483.png" alt="遇见的问题"></p>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><img src="https://img-blog.csdnimg.cn/20210106200605271.png" alt="解决问题"></p>
-<pre class="line-numbers language-bash"><code class="language-bash">hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><img src="https://img-blog.csdnimg.cn/20210106200617859.png" alt="成功"></p>
+                <h2 id="Java中"><a href="#Java中" class="headerlink" title="Java中"></a>Java中</h2><pre class="line-numbers language-java"><code class="language-java"><span class="token comment" spellcheck="true">//对象数组的创建方式为：</span>
+ClassName<span class="token punctuation">[</span><span class="token punctuation">]</span> varName <span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">ClassName</span><span class="token punctuation">[</span>numberOfArray<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//或者：</span>
+ClassName varName<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ClassName</span><span class="token punctuation">[</span>numberOfArray<span class="token punctuation">]</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="C-中"><a href="#C-中" class="headerlink" title="C++中"></a>C++中</h2><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token comment" spellcheck="true">//定义指向对象数组的指针的创建方式为</span>
+ClassName <span class="token operator">*</span>varName <span class="token operator">=</span><span class="token keyword">new</span> ClassName<span class="token punctuation">[</span>numberOfArray<span class="token punctuation">]</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -447,7 +448,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://IsQiya.github.io/posts/2a2d.html">http://IsQiya.github.io/posts/2a2d.html</a>
+                    <a href="http://IsQiya.github.io/posts/341f.html">http://IsQiya.github.io/posts/341f.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -485,8 +486,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%B8%B8%E8%A7%81%E6%8A%A5%E9%94%99/">
-                                    <span class="chip bg-color">常见报错</span>
+                                <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                                    <span class="chip bg-color">学习笔记</span>
                                 </a>
                             
                         </div>
@@ -660,19 +661,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/ab80.html">
+                <a href="/posts/5fa0.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="网站整理">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="【程序员】c++调用父类构造函数的方法">
                         
-                        <span class="card-title">网站整理</span>
+                        <span class="card-title">【程序员】c++调用父类构造函数的方法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            好用网站推荐
+                            :public ClassName
                         
                     </div>
                     <div class="publish-info">
@@ -683,8 +684,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%88%86%E4%BA%AB/" class="post-category">
-                                    分享
+                            <a href="/categories/%E8%BD%AF%E8%80%83%E4%B9%8B%E7%A8%8B%E5%BA%8F%E5%91%98/" class="post-category">
+                                    软考之程序员
                                 </a>
                             
                             
@@ -694,8 +695,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%B5%84%E6%BA%90%E6%95%B4%E7%90%86/">
-                        <span class="chip bg-color">资源整理</span>
+                    <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">学习笔记</span>
                     </a>
                     
                 </div>
@@ -706,46 +707,45 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/2a2d.html">
+                <a href="/posts/e5ee.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="【博客搭建遇见的问题】ERROR Deployer not found: git">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="const关键字">
                         
-                        <span class="card-title">【博客搭建遇见的问题】ERROR Deployer not found: git</span>
+                        <span class="card-title">const关键字</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ERROR Deployer not found: git
+                            const
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-06
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-11
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-category">
-                                    博客搭建
+                            <a href="/categories/%E8%BD%AF%E8%80%83%E4%B9%8B%E7%A8%8B%E5%BA%8F%E5%91%98/" class="post-category">
+                                    软考之程序员
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%B8%B8%E8%A7%81%E6%8A%A5%E9%94%99/">
-                        <span class="chip bg-color">常见报错</span>
+                    <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">学习笔记</span>
                     </a>
                     
                 </div>
