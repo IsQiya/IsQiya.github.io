@@ -1,0 +1,9 @@
+/* Here is your custom css styles. */
+
+/* 自定义鼠标样式 */
+*{
+    cursor: url("/medias/cursor1.ico"),auto!important;
+}
+:active{
+    cursor: url("/medias/cursor1.ico"),auto!important;
+}

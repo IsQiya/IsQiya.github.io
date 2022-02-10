@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>【程序员】c++调用父类构造函数的方法</title>
+      <link href="posts/5fa0.html"/>
+      <url>posts/5fa0.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="c-调用父类的构造函数"><a href="#c-调用父类的构造函数" class="headerlink" title="c++调用父类的构造函数"></a>c++调用父类的构造函数</h2><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token comment" spellcheck="true">//语法为：</span><span class="token operator">:</span><span class="token keyword">public</span> ClassName<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软考之程序员 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>对象数组的创建方式</title>
+      <link href="posts/341f.html"/>
+      <url>posts/341f.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="Java中"><a href="#Java中" class="headerlink" title="Java中"></a>Java中</h2><pre class="line-numbers language-java"><code class="language-java"><span class="token comment" spellcheck="true">//对象数组的创建方式为：</span>ClassName<span class="token punctuation">[</span><span class="token punctuation">]</span> varName <span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">ClassName</span><span class="token punctuation">[</span>numberOfArray<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//或者是：</span>ClassName varName<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ClassName</span><span class="token punctuation">[</span>numberOfArray<span class="token punctuation">]</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h2 id="C-中"><a href="#C-中" class="headerlink" title="C++中"></a>C++中</h2><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token comment" spellcheck="true">//定义指向对象数组的指针的创建方式为</span>ClassName <span class="token operator">*</span>varName <span class="token operator">=</span><span class="token keyword">new</span> ClassName<span class="token punctuation">[</span>numberOfArray<span class="token punctuation">]</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软考之程序员 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>const关键字</title>
+      <link href="posts/e5ee.html"/>
+      <url>posts/e5ee.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="const修饰常量时"><a href="#const修饰常量时" class="headerlink" title="const修饰常量时"></a>const修饰常量时</h2><p>定义一个只读型常量</p><pre class="line-numbers language-c"><code class="language-c"><span class="token keyword">const</span> <span class="token keyword">int</span> p<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//或 int const p=10;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h2 id="const修饰指针时"><a href="#const修饰指针时" class="headerlink" title="const修饰指针时"></a>const修饰指针时</h2><hr><p>当const用于修饰指针时，常见的情形如下：<br>(1)const修饰的是指针所指向的对象，该<strong>对象不可改变，指针变量可改变</strong>。</p><pre class="line-numbers language-c"><code class="language-c"><span class="token keyword">const</span> <span class="token keyword">int</span> <span class="token operator">*</span>p<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//或 int const *p;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>(2) const修饰的是指针，该指针<strong>变量不可改变，其指向的对象可改变</strong>。</p><pre class="line-numbers language-c"><code class="language-c"><span class="token keyword">int</span> <span class="token operator">*</span><span class="token keyword">const</span> p<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>(3)const修饰的是指针以及指针<strong>所指向的对象，都不可改变</strong>。</p><pre class="line-numbers language-c"><code class="language-c"><span class="token keyword">const</span> <span class="token keyword">int</span> <span class="token operator">*</span><span class="token keyword">const</span> p<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br><h2 id="const与static的关系"><a href="#const与static的关系" class="headerlink" title="const与static的关系"></a>const与static的关系</h2><hr><h3 id="关键字static"><a href="#关键字static" class="headerlink" title="关键字static"></a>关键字static</h3><p>关键字static用于修饰函数中的局部变量时，是通知编译器将该变量的存储空间安排在全局存储区，这样在下一次调用函数时还保留上一次对该变量的修改结果。</p><h3 id="一个源程序由多个源文件组成时"><a href="#一个源程序由多个源文件组成时" class="headerlink" title="一个源程序由多个源文件组成时"></a>一个源程序由多个源文件组成时</h3><p>用<code>static</code>修饰的全局变量和函数，其作用域为当前文件，对其他源文件不可见，即它们不能被其他源文件引用或调用。<br>当函数的形参用<code>const</code>修饰时，在函数体内部不能被修改。若修改编译过程会报错</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软考之程序员 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>网站整理</title>
+      <link href="posts/ab80.html"/>
+      <url>posts/ab80.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="刷题类网站"><a href="#刷题类网站" class="headerlink" title="刷题类网站"></a>刷题类网站</h2><p><a href="https://www.lanqiao.cn/">蓝桥</a>：刷题网站<br><a href="https://www.nowcoder.com/">牛客网</a>：IT题库，有java，前端面试题<br><a href="https://leetcode-cn.com/">Leetcode</a>：经典刷题网站<br><a href="http://poj.org/">POJ</a>：北大OJ里面非常多的大佬编程<br><a href="https://www.lintcode.com/">Lintcode</a>：也是一个经典刷题网站<br><a href="https://github.com/">Github</a>：优秀项目源码<br><a href="https://codehs.com/">Code HS</a>：刷题<br><a href="https://stackoverflow.com/">stackoverflow</a>：专门答疑的网站，有bug就找它</p><h2 id="学习编程的游戏网站"><a href="#学习编程的游戏网站" class="headerlink" title="学习编程的游戏网站"></a>学习编程的游戏网站</h2><p>checkio：基于python来推进的页游<br>cyber dojo：练习编程的地方<br>codingame：所有具有挑战性的编程问题<br>screeps：通过玩游戏来学习JavaScript<br>code combat</p><h2 id="自学编程的网站"><a href="#自学编程的网站" class="headerlink" title="自学编程的网站"></a>自学编程的网站</h2><p><a href="https://blog.csdn.net/qq_45351292?spm=1011.2124.3001.5343">CSDN</a><br><a href="https://www.bilibili.com/">B站</a><br><a href="https://www.icourse163.org/">中国大学mooc</a>：最好的在线课程学习平台<br><a href="https://open.163.com/">网易云公开课</a>：免费的公开课<br><a href="https://www.runoob.com/">菜鸟教程</a>：学的不仅是编程技术，更是梦想<br>知乎<br><a href="https://juejin.cn/">掘金</a><br><a href="https://www.imooc.com/">慕课网</a>：技术学习<br>实验楼：云主机做一些计算机实践</p><h2 id="兼职接私单网站"><a href="#兼职接私单网站" class="headerlink" title="兼职接私单网站"></a>兼职接私单网站</h2><p><a href="https://codemart.com/">码市</a><br><a href="https://daqing.zbj.com/">猪八戒网</a><br>开源众包<br>实现网<br>猿急送<br>人人开发<br>开发邦<br>程序员客栈<br>外包大师</p><h2 id="英语"><a href="#英语" class="headerlink" title="英语"></a>英语</h2><p>《英语语音学》台大教授史嘉琳老师：B站全集搬运</p><h2 id="纪录片"><a href="#纪录片" class="headerlink" title="纪录片"></a>纪录片</h2><p>创新中国<br>中国通史<br>大国重器<br>航拍中国<br>蓝色星球<br>人民的名义<br>经典永流传<br>百家讲坛</p><h2 id="电影"><a href="#电影" class="headerlink" title="电影"></a>电影</h2><p>《雪莉：现实的愿景》：构图色彩搭配 173讲究<br>《布达佩斯大饭店》：构图 复古<br>《赎罪》：森系 法师复古<br>《小情书》：日系清新<br>《挚爱梵高-星空之谜》：手绘油画风<br>《与玛格丽特的午后》<br>ok 老板娘</p><h2 id="App"><a href="#App" class="headerlink" title="App"></a>App</h2><p>扇贝编程：在线学编程<br>人民攻摄拍照商店：摄影技巧学习<br>形色识花：拍照识花<br>坚果英语俱乐部：练习口语<br>瓜大二手书：二手书籍<br>微信读书：免费听书<br>没有我找不到的文献：写论文必备<br>快速找文献：写论文</p><h2 id="理财书籍"><a href="#理财书籍" class="headerlink" title="理财书籍"></a>理财书籍</h2><p>半小时漫画系列<br>刻意练习<br>人类的终极命运<br>指数基金投资指南</p><h2 id="审美网站"><a href="#审美网站" class="headerlink" title="审美网站"></a>审美网站</h2><p><a href="https://film-grab.com/">filmgrab</a><br>shotdeck<br>pinterest</p><h2 id="音效素材"><a href="#音效素材" class="headerlink" title="音效素材"></a>音效素材</h2><p><a href="https://www.ear0.com/">耳聆网</a><br><a href="https://www.aigei.com/">爱给网</a></p><h2 id="ICO图标"><a href="#ICO图标" class="headerlink" title="ICO图标"></a>ICO图标</h2><p><a href="https://www.streamlineicons.com/">Nova</a>：是唯一可以为每个图标提供两种风格的图标收集网站：线条或填充图标。每个图标被分别绘制成两个版本，所以总共有8000个图标。<br><a href="https://icons8.com/">Icons8</a>：一个超棒的优质图标收集网站，所有图标均由单个设计人员完成，因此用户界面看起来一致。使用者可以根据自己的喜好自由改变颜色，并支持html嵌入。<br><a href="https://www.flaticon.com/">flaticon</a><br><a href="https://www.easyicon.net/">Easyicon</a></p><h2 id="文案创意平台"><a href="#文案创意平台" class="headerlink" title="文案创意平台"></a>文案创意平台</h2><p><a href="https://www.digitaling.com/">数英DIGITALING</a>：文案创意中心<br><a href="https://socialbeta.com/">SocialBeta</a>：分享营销动态<br><a href="https://www.topys.cn/">TOPYS.</a>：创意分享平台</p><h2 id="图片变高清网站"><a href="#图片变高清网站" class="headerlink" title="图片变高清网站"></a>图片变高清网站</h2><p><a href="https://bigjpg.com/">bigjpg</a>：AI人工智能图片放大</p><h2 id="论文查重"><a href="#论文查重" class="headerlink" title="论文查重"></a>论文查重</h2><p><a href="http://cnki.sbvv.cn/">知网系统</a>：99%高校毕业论文查重系统要求<br><a href="https://www.paperpass.com/">Paperpass</a> ：参考现有网络资源查重，新用户可以免费试用1~2次<br><a href="http://www.papertime.cn/">Papertime</a> ：可以进行实时查重，方便修改<br>迅捷论文查重：手机端软件查重</p><h2 id="写作投稿"><a href="#写作投稿" class="headerlink" title="写作投稿"></a>写作投稿</h2><p>1、花边阅读(每篇400-600)<br>投稿邮箱：<a href="mailto:&#x68;&#117;&#97;&#x62;&#105;&#x61;&#110;&#x79;&#x75;&#x65;&#100;&#x75;&#64;&#113;&#113;&#46;&#99;&#x6f;&#109;">&#x68;&#117;&#97;&#x62;&#105;&#x61;&#110;&#x79;&#x75;&#x65;&#100;&#x75;&#64;&#113;&#113;&#46;&#99;&#x6f;&#109;</a><br>2、桃子笔记(每篇300)<br>投稿邮箱：<a href="mailto:&#x74;&#x7a;&#x62;&#105;&#64;&#49;&#54;&#x33;&#46;&#x63;&#x6f;&#109;">&#x74;&#x7a;&#x62;&#105;&#64;&#49;&#54;&#x33;&#46;&#x63;&#x6f;&#109;</a><br>3、稿事编辑部(350/千字)<br>投稿邮箱：<a href="mailto:&#x6d;&#97;&#106;&#x6f;&#114;&#95;&#x65;&#x6e;&#x74;&#x40;&#49;&#54;&#x33;&#x2e;&#99;&#111;&#109;">&#x6d;&#97;&#106;&#x6f;&#114;&#95;&#x65;&#x6e;&#x74;&#x40;&#49;&#54;&#x33;&#x2e;&#99;&#111;&#109;</a><br>4、壹课(每篇200—500)<br>投稿邮箱：<a href="mailto:&#x79;&#105;&#x6b;&#101;&#98;&#x65;&#x73;&#x74;&#64;&#x79;&#105;&#107;&#x65;&#x73;&#104;&#x61;&#x72;&#101;&#x2e;&#99;&#x6e;">&#x79;&#105;&#x6b;&#101;&#98;&#x65;&#x73;&#x74;&#64;&#x79;&#105;&#107;&#x65;&#x73;&#104;&#x61;&#x72;&#101;&#x2e;&#99;&#x6e;</a><br>5、地球青年图鉴(300—1000/千字)<br>投稿邮箱：<a href="mailto:&#97;&#108;&#108;&#112;&#104;&#111;&#x74;&#111;&#64;&#x69;&#102;&#101;&#110;&#103;&#x2e;&#99;&#x6f;&#x6d;">&#97;&#108;&#108;&#112;&#104;&#111;&#x74;&#111;&#64;&#x69;&#102;&#101;&#110;&#103;&#x2e;&#99;&#x6f;&#x6d;</a><br>6、遇见张小娴(每篇300—1000)投稿邮箱：<a href="mailto:&#116;&#111;&#117;&#103;&#x61;&#111;&#x78;&#105;&#x6e;&#x6d;&#101;&#105;&#64;&#98;&#x6f;&#x6f;&#x6b;&#x2e;&#x63;&#111;&#109;">&#116;&#111;&#117;&#103;&#x61;&#111;&#x78;&#105;&#x6e;&#x6d;&#101;&#105;&#64;&#98;&#x6f;&#x6f;&#x6b;&#x2e;&#x63;&#111;&#109;</a><br>7、十点读书(每篇200—20000)投稿邮箱：<a href="mailto:&#100;&#111;&#99;&#x40;&#x73;&#100;&#105;&#114;&#101;&#97;&#x64;&#46;&#x63;&#x6f;&#109;">&#100;&#111;&#99;&#x40;&#x73;&#100;&#105;&#114;&#101;&#97;&#x64;&#46;&#x63;&#x6f;&#109;</a><br>8、樊登读书会(每篇300—3000)投稿邮箱：<a href="mailto:&#103;&#x61;&#x6f;&#102;&#101;&#x69;&#121;&#117;&#64;&#100;&#x75;&#x73;&#x68;&#x75;&#46;&#x69;&#x6f;">&#103;&#x61;&#x6f;&#102;&#101;&#x69;&#121;&#117;&#64;&#100;&#x75;&#x73;&#x68;&#x75;&#46;&#x69;&#x6f;</a><br>9、我们是有故事的人(每篇150—500)投稿邮箱：<a href="mailto:&#x77;&#109;&#x73;&#121;&#x67;&#x73;&#x64;&#x72;&#x40;&#49;&#54;&#x33;&#x2e;&#x63;&#x6f;&#109;">&#x77;&#109;&#x73;&#121;&#x67;&#x73;&#x64;&#x72;&#x40;&#49;&#54;&#x33;&#x2e;&#x63;&#x6f;&#109;</a><br>10、野马青年(200/千字)<br>投稿邮箱：<a href="mailto:&#x79;&#101;&#x6d;&#97;&#64;&#x67;&#x72;&#x65;&#101;&#110;&#x78;&#120;&#111;&#111;&#x2e;&#x63;&#111;&#x6d;">&#x79;&#101;&#x6d;&#97;&#64;&#x67;&#x72;&#x65;&#101;&#110;&#x78;&#120;&#111;&#111;&#x2e;&#x63;&#111;&#x6d;</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 资源整理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【博客搭建遇见的问题】ERROR Deployer not found: git</title>
+      <link href="posts/2a2d.html"/>
+      <url>posts/2a2d.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="部署问题"><a href="#部署问题" class="headerlink" title="部署问题"></a>部署问题</h2><p><img src="https://img-blog.csdnimg.cn/20210106200216483.png" alt="遇见的问题"></p><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><img src="https://img-blog.csdnimg.cn/20210106200605271.png" alt="解决问题"></p><pre class="line-numbers language-bash"><code class="language-bash">hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><img src="https://img-blog.csdnimg.cn/20210106200617859.png" alt="成功"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 博客搭建 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 常见报错 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
